@@ -1,0 +1,112 @@
+---
+title: 首页
+---
+
+import { Cards } from 'nextra/components'
+import { 
+  Code2, 
+  TrendingUp, 
+  BookOpen, 
+  Users, 
+  Lightbulb
+} from 'lucide-react'
+
+<div className="mt-8 mb-16">
+  <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-300 dark:to-white bg-clip-text text-transparent mb-6">
+    欢迎来到我的数字花园
+  </h1>
+  <p className="text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
+    这里不仅仅是代码仓库，更是思想沉淀的地方。<br/>
+    在这里，我记录技术成长、理财心得、阅读感悟以及对生活的思考。
+  </p>
+</div>
+
+<div className="mb-8">
+  <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 flex items-center gap-3">
+    <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
+    探索版图
+  </h2>
+</div>
+
+<Cards num={2}>
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-600/10 dark:from-blue-500/30 dark:to-blue-600/20 ring-1 ring-blue-500/20">
+        <Code2 size={24} className="text-blue-600 dark:text-blue-400" />
+      </div>
+    }
+    title="技术笔记"
+    href="/tech"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      全栈开发之路：从前端交互到后端架构的实战经验
+    </div>
+  </Cards.Card>
+  
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 dark:from-emerald-500/30 dark:to-emerald-600/20 ring-1 ring-emerald-500/20">
+        <TrendingUp size={24} className="text-emerald-600 dark:text-emerald-400" />
+      </div>
+    }
+    title="理财投资"
+    href="/finance"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      构建财务自由：资产配置、基金定投与价值投资
+    </div>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-amber-500/20 to-amber-600/10 dark:from-amber-500/30 dark:to-amber-600/20 ring-1 ring-amber-500/20">
+        <BookOpen size={24} className="text-amber-600 dark:text-amber-400" />
+      </div>
+    }
+    title="阅读感悟"
+    href="/reading"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      输入与输出：精选书单、读书笔记与深度思考
+    </div>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-rose-500/20 to-rose-600/10 dark:from-rose-500/30 dark:to-rose-600/20 ring-1 ring-rose-500/20">
+        <Users size={24} className="text-rose-600 dark:text-rose-400" />
+      </div>
+    }
+    title="人际交往"
+    href="/social"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      连接与共情：沟通技巧、关系维护与职场软技能
+    </div>
+  </Cards.Card>
+  
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 dark:from-purple-500/30 dark:to-purple-600/20 ring-1 ring-purple-500/20">
+        <Lightbulb size={24} className="text-purple-600 dark:text-purple-400" />
+      </div>
+    }
+    title="思考随笔"
+    href="/thoughts"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      灵光一现：那些不记录就会消失的想法
+    </div>
+  </Cards.Card>
+</Cards>
+
+<div className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-800">
+  <div className="text-center text-sm text-gray-400 dark:text-gray-500">
+    持续记录，不断成长 ✨
+  </div>
+</div>

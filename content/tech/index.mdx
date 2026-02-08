@@ -1,0 +1,80 @@
+import { Cards } from 'nextra/components'
+import { AppWindow, Server, Container, Wrench, Flame, Zap } from 'lucide-react'
+
+# 💻 技术笔记
+
+<div className="mt-4 mb-8 text-xl text-gray-500 dark:text-gray-400 font-light tracking-wide">
+  从微观交互到宏观架构，探索全栈开发的极致可能。
+</div>
+
+---
+
+### 🚀 核心领域
+
+<Cards>
+  <Cards.Card
+    icon={<AppWindow size={24} className="text-blue-500" />}
+    title="前端开发"
+    href="/tech/frontend"
+    arrow
+  >
+    <span className="text-sm text-gray-500 mt-2 block break-words">
+      Next.js, React 生态与极致动效
+    </span>
+  </Cards.Card>
+  
+  <Cards.Card
+    icon={<Server size={24} className="text-emerald-500" />}
+    title="后端架构"
+    href="/tech/backend"
+    arrow
+  >
+    <span className="text-sm text-gray-500 mt-2 block break-words">
+      高并发,微服务与数据库优化
+    </span>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={<Container size={24} className="text-orange-500" />}
+    title="运维部署"
+    href="/tech/devops"
+    arrow
+  >
+    <span className="text-sm text-gray-500 mt-2 block break-words">
+      Docker, Kubernetes 与持续集成
+    </span>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={<Wrench size={24} className="text-purple-500" />}
+    title="工具效率"
+    href="/tech/tools"
+    arrow
+  >
+    <span className="text-sm text-gray-500 mt-2 block break-words">
+      Vim, Shell 与生产力黑科技
+    </span>
+  </Cards.Card>
+</Cards>
+
+### 📅 因缺思厅 (Latest)
+
+<div className="mt-8 grid gap-4 md:grid-cols-2">
+  <div className="group p-5 border rounded-xl border-gray-100 dark:border-white/10 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all">
+    <div className="flex items-center gap-2 mb-2">
+       <Flame size={16} className="text-orange-500" />
+       <span className="text-xs font-bold text-orange-500 uppercase tracking-widest">Hot Pick</span>
+    </div>
+    <div className="font-semibold text-lg text-gray-900 dark:text-gray-100 group-hover:text-blue-500 transition-colors">Rust vs Go: 谁是后端新宠？</div>
+    <div className="text-sm text-gray-500 mt-2 line-clamp-2">深入对比两者在并发处理、内存安全和开发效率上的根本差异...</div>
+  </div>
+
+  <div className="group p-5 border rounded-xl border-gray-100 dark:border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all">
+    <div className="flex items-center gap-2 mb-2">
+       <Zap size={16} className="text-yellow-500" />
+       <span className="text-xs font-bold text-yellow-500 uppercase tracking-widest">Updated</span>
+    </div>
+    <div className="font-semibold text-lg text-gray-900 dark:text-gray-100 group-hover:text-emerald-500 transition-colors">Server Components 完全指南</div>
+    <div className="text-sm text-gray-500 mt-2 line-clamp-2">React Server Components 正在彻底改变我们构建 Web 应用的方式，这里有你需要知道的一切...</div>
+  </div>
+</div>

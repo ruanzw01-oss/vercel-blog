@@ -1,4 +1,107 @@
-/* 自定义样式 */
+@import "tailwindcss";
+
+/* ===== 全局样式优化 ===== */
+
+/* 使用 Inter 字体 */
 :root {
-  --primary-hue: 210;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== 卡片悬停效果增强 ===== */
+/* Nextra Cards 组件的样式增强 */
+[class*="nextra-card"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+[class*="nextra-card"]:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 深色模式下的卡片发光效果 */
+.dark [class*="nextra-card"]:hover {
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 0 30px -5px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* ===== 链接和交互优化 ===== */
+/* 更柔和的链接悬停效果 */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* ===== 代码块美化 ===== */
+pre {
+  border-radius: 12px !important;
+}
+
+code {
+  border-radius: 6px !important;
+}
+
+/* ===== 滚动条美化 (仅限 Webkit 浏览器) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* ===== 选中文本样式 ===== */
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+.dark ::selection {
+  background-color: rgba(147, 197, 253, 0.3);
+}
+
+/* ===== 图片圆角 ===== */
+article img {
+  border-radius: 12px;
+}
+
+/* ===== 平滑滚动 ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== 侧边栏活动项高亮 ===== */
+nav [aria-current="page"] {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent) !important;
+  border-left: 2px solid #3b82f6 !important;
+}
+
+.dark nav [aria-current="page"] {
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.15), transparent) !important;
+  border-left: 2px solid #60a5fa !important;
 }
