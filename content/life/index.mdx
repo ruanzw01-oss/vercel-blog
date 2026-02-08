@@ -1,0 +1,47 @@
+﻿---
+title: 生活记录
+---
+
+import { Cards } from 'nextra/components'
+import { NotebookText, CheckSquare } from 'lucide-react'
+
+<div className="mt-8 mb-10">
+  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+    生活记录
+  </h1>
+  <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl leading-relaxed">
+    记录日常、整理待办，让生活与成长同步发生。
+  </p>
+</div>
+
+<Cards num={2}>
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-sky-500/20 to-sky-600/10 dark:from-sky-500/30 dark:to-sky-600/20 ring-1 ring-sky-500/20">
+        <NotebookText size={24} className="text-sky-600 dark:text-sky-400" />
+      </div>
+    }
+    title="每日流水账"
+    href="/life/daily"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      每日记录：生活小事与学习进展。
+    </div>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-teal-500/20 to-teal-600/10 dark:from-teal-500/30 dark:to-teal-600/20 ring-1 ring-teal-500/20">
+        <CheckSquare size={24} className="text-teal-600 dark:text-teal-400" />
+      </div>
+    }
+    title="每月待办"
+    href="/life/todo"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      计划与追踪：按月整理需要研究与完成的事项。
+    </div>
+  </Cards.Card>
+</Cards>

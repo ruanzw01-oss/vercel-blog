@@ -58,7 +58,7 @@ export default async function RootLayout({
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/your-username/your-repo/tree/main"
           footer={footer}
-          sidebar={{ defaultMenuCollapseLevel: 1, toggleButton: true }}
+          sidebar={{ defaultMenuCollapseLevel: 1, autoCollapse: true, toggleButton: true }}
           toc={{ title: '本页目录', backToTop: true }}
           editLink="在 GitHub 上编辑"
         >

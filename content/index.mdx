@@ -8,7 +8,8 @@ import {
   TrendingUp, 
   BookOpen, 
   Users, 
-  Lightbulb
+  Lightbulb,
+  NotebookText
 } from 'lucide-react'
 
 <div className="mt-8 mb-16">
@@ -101,6 +102,21 @@ import {
   >
     <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
       灵光一现：那些不记录就会消失的想法
+    </div>
+  </Cards.Card>
+
+  <Cards.Card
+    icon={
+      <div className="p-3 rounded-xl bg-gradient-to-br from-sky-500/20 to-sky-600/10 dark:from-sky-500/30 dark:to-sky-600/20 ring-1 ring-sky-500/20">
+        <NotebookText size={24} className="text-sky-600 dark:text-sky-400" />
+      </div>
+    }
+    title="生活记录"
+    href="/life"
+    arrow
+  >
+    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      每日流水与每月待办，持续积累与回顾
     </div>
   </Cards.Card>
 </Cards>

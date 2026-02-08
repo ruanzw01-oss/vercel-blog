@@ -4,7 +4,8 @@ import {
   TrendingUp, 
   BookOpen, 
   Users, 
-  Lightbulb 
+  Lightbulb,
+  NotebookText
 } from 'lucide-react'
 
 export default {
@@ -52,6 +53,15 @@ export default {
       <span className="flex items-center gap-2">
         <Lightbulb size={18} className="text-purple-500" />
         思考随笔
+      </span>
+    ),
+    type: 'page'
+  },
+  life: {
+    title: (
+      <span className="flex items-center gap-2">
+        <NotebookText size={18} className="text-sky-500" />
+        生活记录
       </span>
     ),
     type: 'page'
