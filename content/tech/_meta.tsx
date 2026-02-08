@@ -1,9 +1,11 @@
 
-import { 
-  SiReact, 
-  SiSpring, 
-  SiDocker, 
-  SiGit 
+import {
+  SiReact,
+  SiSpring,
+  SiDocker,
+  SiGit,
+  SiGnubash,
+  SiWindows
 } from 'react-icons/si'
 
 export default {
@@ -42,6 +44,22 @@ export default {
       <span className="flex items-center gap-2 group">
         <SiGit className="text-orange-600 group-hover:scale-110 transition-transform" />
         工具效率
+      </span>
+    )
+  },
+  shell: {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <SiGnubash className="text-gray-600 group-hover:scale-110 transition-transform" />
+        Shell 技巧
+      </span>
+    )
+  },
+  'env-setup': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <SiWindows className="text-blue-500 group-hover:scale-110 transition-transform" />
+        开发环境
       </span>
     )
   }
