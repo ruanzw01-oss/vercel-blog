@@ -4,9 +4,9 @@ import {
   SiSpring,
   SiDocker,
   SiGit,
-  SiGnubash,
-  SiWindows
+  SiGnubash
 } from 'react-icons/si'
+import { MonitorCog } from 'lucide-react'
 
 export default {
   index: {
@@ -58,7 +58,7 @@ export default {
   'env-setup': {
     title: (
       <span className="flex items-center gap-2 group">
-        <SiWindows className="text-blue-500 group-hover:scale-110 transition-transform" />
+        <MonitorCog className="text-blue-500 group-hover:scale-110 transition-transform" size={16} />
         开发环境
       </span>
     )
