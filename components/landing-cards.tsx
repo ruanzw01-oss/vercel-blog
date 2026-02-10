@@ -1,6 +1,4 @@
-'use client'
-
-import type { ComponentType, ReactNode } from 'react'
+import type { ComponentType, ReactElement, ReactNode } from 'react'
 import { Cards } from 'nextra/components'
 
 type Tone = 'blue' | 'emerald' | 'amber' | 'rose' | 'purple' | 'sky'
@@ -56,9 +54,9 @@ type LandingCardIconProps = {
   children: ReactNode
 }
 
-type LandingCardsComponent = ((props: LandingCardsProps) => JSX.Element) & {
-  Card: (props: LandingCardProps) => JSX.Element
-  Icon: (props: LandingCardIconProps) => JSX.Element
+type LandingCardsComponent = ((props: LandingCardsProps) => ReactElement) & {
+  Card: (props: LandingCardProps) => ReactElement
+  Icon: (props: LandingCardIconProps) => ReactElement
 }
 
 const LandingCardIcon = ({ tone, children }: LandingCardIconProps) => {
@@ -78,13 +76,13 @@ const LandingCards = (({ children, columns = 2 }: LandingCardsProps) => {
 
 LandingCards.Icon = LandingCardIcon
 
-LandingCards.Card = function LandingCard({
+const LandingCard = ({
   tone,
   title,
   href,
   icon: Icon,
   children,
-}: LandingCardProps) {
+}: LandingCardProps) => {
   return (
     <Cards.Card
       icon={
@@ -103,5 +101,7 @@ LandingCards.Card = function LandingCard({
   )
 }
 
-export { LandingCards }
+LandingCards.Card = LandingCard
+
+export { LandingCard, LandingCards }
 export type { LandingCardProps, LandingCardsProps, Tone }

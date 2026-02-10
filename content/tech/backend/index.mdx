@@ -1,0 +1,41 @@
+---
+title: 后端开发
+---
+
+import { LandingCard, LandingCards } from '../../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../../components/section-hero'
+import { Braces, Database, Rocket } from 'lucide-react'
+
+<SectionHero tone="emerald">
+  <SectionHeroEyebrow>Backend Lab</SectionHeroEyebrow>
+  <SectionHeroTitle>后端开发</SectionHeroTitle>
+  <SectionHeroLead>
+    从语言到框架再到数据层，沉淀高质量的服务端能力。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>Java</SectionHeroTag>
+    <SectionHeroTag>Python</SectionHeroTag>
+    <SectionHeroTag>数据库</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard tone="blue" title="Java 开发" href="/tech/backend/java" icon={Rocket}>
+    Spring Boot、MyBatis-Plus 与性能调优。
+  </LandingCard>
+
+  <LandingCard tone="emerald" title="Python 开发" href="/tech/backend/python" icon={Braces}>
+    FastAPI、Django 与数据处理实践。
+  </LandingCard>
+
+  <LandingCard tone="amber" title="数据库" href="/tech/backend/database" icon={Database}>
+    MySQL、Redis、MongoDB 的设计与优化。
+  </LandingCard>
+</LandingCards>

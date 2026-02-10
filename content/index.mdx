@@ -2,7 +2,15 @@
 title: 首页
 ---
 
-import { LandingCards } from '../components/landing-cards'
+import { LandingCard, LandingCards } from '../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../components/section-hero'
 import {
   Code2,
   TrendingUp,
@@ -12,37 +20,21 @@ import {
   NotebookText,
 } from 'lucide-react'
 
-<div className="relative mb-14 overflow-hidden rounded-3xl border border-gray-200/60 dark:border-gray-800/80 bg-gradient-to-br from-white via-white to-blue-50/60 dark:from-gray-950 dark:via-gray-950 dark:to-slate-900/60">
-  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br from-blue-500/30 to-purple-500/10 blur-2xl"></div>
-  <div className="absolute -left-16 bottom-0 h-44 w-44 rounded-full bg-gradient-to-tr from-emerald-400/20 to-sky-400/10 blur-2xl"></div>
-  <div className="relative px-6 py-10 md:px-10 md:py-14">
-    <p className="text-xs uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">
-      Digital Garden
-    </p>
-    <h1 className="mt-4 text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-300 dark:to-white bg-clip-text text-transparent">
-      欢迎来到我的数字花园
-    </h1>
-    <p className="mt-5 text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
-      这里不仅仅是代码仓库，更是思想沉淀的地方。
-      <br />
-      在这里，我记录技术成长、理财心得、阅读感悟以及对生活的思考。
-    </p>
-    <div className="mt-6 flex flex-wrap gap-3 text-xs text-gray-500 dark:text-gray-400">
-      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
-        技术
-      </span>
-      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
-        理财
-      </span>
-      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
-        阅读
-      </span>
-      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
-        生活
-      </span>
-    </div>
-  </div>
-</div>
+<SectionHero tone="blue">
+  <SectionHeroEyebrow>Digital Garden</SectionHeroEyebrow>
+  <SectionHeroTitle>欢迎来到我的数字花园</SectionHeroTitle>
+  <SectionHeroLead>
+    这里不仅仅是代码仓库，更是思想沉淀的地方。
+    <br />
+    在这里，我记录技术成长、理财心得、阅读感悟以及对生活的思考。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>技术</SectionHeroTag>
+    <SectionHeroTag>理财</SectionHeroTag>
+    <SectionHeroTag>阅读</SectionHeroTag>
+    <SectionHeroTag>生活</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
 
 <div className="mb-8">
   <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 flex items-center gap-3">
@@ -52,44 +44,44 @@ import {
 </div>
 
 <LandingCards columns={2}>
-  <LandingCards.Card tone="blue" title="技术笔记" href="/tech" icon={Code2}>
+  <LandingCard tone="blue" title="技术笔记" href="/tech" icon={Code2}>
     全栈开发之路：从前端交互到后端架构的实战经验
-  </LandingCards.Card>
+  </LandingCard>
 
-  <LandingCards.Card
+  <LandingCard
     tone="emerald"
     title="理财投资"
     href="/finance"
     icon={TrendingUp}
   >
     构建财务自由：资产配置、基金定投与价值投资
-  </LandingCards.Card>
+  </LandingCard>
 
-  <LandingCards.Card tone="amber" title="阅读感悟" href="/reading" icon={BookOpen}>
+  <LandingCard tone="amber" title="阅读感悟" href="/reading" icon={BookOpen}>
     输入与输出：精选书单、读书笔记与深度思考
-  </LandingCards.Card>
+  </LandingCard>
 
-  <LandingCards.Card tone="rose" title="人际交往" href="/social" icon={Users}>
+  <LandingCard tone="rose" title="人际交往" href="/social" icon={Users}>
     连接与共情：沟通技巧、关系维护与职场软技能
-  </LandingCards.Card>
+  </LandingCard>
 
-  <LandingCards.Card
+  <LandingCard
     tone="purple"
     title="思考随笔"
     href="/thoughts"
     icon={Lightbulb}
   >
     灵光一现：那些不记录就会消失的想法
-  </LandingCards.Card>
+  </LandingCard>
 
-  <LandingCards.Card
+  <LandingCard
     tone="sky"
     title="生活记录"
     href="/life"
     icon={NotebookText}
   >
     每日流水与每月待办，持续积累与回顾
-  </LandingCards.Card>
+  </LandingCard>
 </LandingCards>
 
 <div className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-800">

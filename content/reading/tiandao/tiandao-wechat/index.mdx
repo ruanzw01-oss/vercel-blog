@@ -1,0 +1,57 @@
+---
+title: 《天道》公众号版
+---
+
+import { LandingCard, LandingCards } from '../../../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../../../components/section-hero'
+import { ScrollText, Users, Sparkles, BookOpenCheck } from 'lucide-react'
+
+<SectionHero tone="rose">
+  <SectionHeroEyebrow>Tiandao Series</SectionHeroEyebrow>
+  <SectionHeroTitle>《天道》公众号版</SectionHeroTitle>
+  <SectionHeroLead>
+    基于《遥远的救世主》（电视剧《天道》原著）的深度阅读分析，整理成适合公众号发布的长文系列。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>策略</SectionHeroTag>
+    <SectionHeroTag>人物</SectionHeroTag>
+    <SectionHeroTag>哲学</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard tone="amber" title="策略与决策" href="/reading/tiandao/tiandao-wechat/tiandao-wechat-01" icon={ScrollText}>
+    丁元英的操盘术与决策方法论，拆解风险规避与杀富济贫七步策略。
+  </LandingCard>
+
+  <LandingCard tone="rose" title="人物与命运" href="/reading/tiandao/tiandao-wechat/tiandao-wechat-02" icon={Users}>
+    七个人，七种命运：性格如何决定命运的走向。
+  </LandingCard>
+
+  <LandingCard tone="purple" title="哲学与文化" href="/reading/tiandao/tiandao-wechat/tiandao-wechat-03" icon={Sparkles}>
+    强势文化与弱势文化的本质区别，《天道》的底层逻辑拆解。
+  </LandingCard>
+
+  <LandingCard tone="emerald" title="遥远的救世主" href="/reading/tiandao/tiandao-wechat/tiandao-final" icon={BookOpenCheck}>
+    终章：五个普通人的命运对比与“救世主”问题的最终回答。
+  </LandingCard>
+</LandingCards>
+
+<div className="mt-10 rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/30 p-5">
+  <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+    核心观点
+  </div>
+  <p className="mt-3 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+    只要不是我觉到悟到的，你给不了我，给了我也拿不住。只有我自己觉到悟到的，我才有可能做到，我能做到的才是我的。
+  </p>
+  <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+    救世主不在外面，在你自己身上。问题是，你愿不愿意成为他。
+  </p>
+</div>

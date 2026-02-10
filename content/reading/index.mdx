@@ -1,0 +1,70 @@
+---
+title: 阅读感悟
+---
+
+import { LandingCard, LandingCards } from '../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../components/section-hero'
+import {
+  BookOpen,
+  NotebookPen,
+  LibraryBig,
+  Target,
+  Sprout,
+  ScrollText,
+} from 'lucide-react'
+
+<SectionHero tone="amber">
+  <SectionHeroEyebrow>Reading Notes</SectionHeroEyebrow>
+  <SectionHeroTitle>阅读感悟</SectionHeroTitle>
+  <SectionHeroLead>
+    读书是在别人的思想帮助下，建立起自己的思想。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>技术</SectionHeroTag>
+    <SectionHeroTag>商业管理</SectionHeroTag>
+    <SectionHeroTag>心理学</SectionHeroTag>
+    <SectionHeroTag>个人成长</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard tone="amber" title="读书方法" href="/reading/reading-method" icon={BookOpen}>
+    建立有效的输入与输出流程，让阅读成为长期习惯。
+  </LandingCard>
+
+  <LandingCard tone="blue" title="读书笔记" href="/reading/book-notes" icon={NotebookPen}>
+    关键观点摘录与实践感悟，便于快速回看。
+  </LandingCard>
+
+  <LandingCard tone="emerald" title="年度阅读" href="/reading/annual-reading" icon={Target}>
+    持续追踪年度阅读目标与复盘数据。
+  </LandingCard>
+
+  <LandingCard tone="purple" title="现金流投资" href="/reading/cashflow-investing" icon={LibraryBig}>
+    现金流视角下的投资读书笔记与案例。
+  </LandingCard>
+
+  <LandingCard tone="sky" title="投资课" href="/reading/investment-lesson" icon={ScrollText}>
+    系列课程笔记，形成可执行的投资框架。
+  </LandingCard>
+
+  <LandingCard tone="rose" title="天道专题" href="/reading/tiandao" icon={Sprout}>
+    作品人物、策略与哲学的系统化整理。
+  </LandingCard>
+</LandingCards>
+
+<div className="mt-10 rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/30 p-5">
+  <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+    2026 阅读目标
+  </div>
+  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+    24 本（已完成 0 / 24）
+  </p>
+</div>

@@ -1,0 +1,53 @@
+---
+title: 人际交往
+---
+
+import { LandingCard, LandingCards } from '../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../components/section-hero'
+import { MessageCircle, HeartHandshake, Network } from 'lucide-react'
+
+<SectionHero tone="rose">
+  <SectionHeroEyebrow>Social Skills</SectionHeroEyebrow>
+  <SectionHeroTitle>人际交往</SectionHeroTitle>
+  <SectionHeroLead>
+    真诚是最好的技巧，连接与共情才能让关系长久。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>沟通表达</SectionHeroTag>
+    <SectionHeroTag>关系维护</SectionHeroTag>
+    <SectionHeroTag>人脉拓展</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard tone="rose" title="沟通技巧" href="/social/communication" icon={MessageCircle}>
+    学会表达、倾听与反馈，让沟通更高效。
+  </LandingCard>
+
+  <LandingCard tone="amber" title="关系维护" href="/social/relationships" icon={HeartHandshake}>
+    经营重要关系，让彼此成为长期合作者。
+  </LandingCard>
+
+  <LandingCard tone="purple" title="人脉拓展" href="/social/networking" icon={Network}>
+    建立有质量的连接网络，获得更多机会。
+  </LandingCard>
+</LandingCards>
+
+<div className="mt-10 rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/30 p-5">
+  <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+    人际关系的价值
+  </div>
+  <ul className="mt-3 space-y-2 text-sm text-gray-500 dark:text-gray-400">
+    <li>情感支持：孤独是现代社会的通病</li>
+    <li>资源互换：人脉就是资源</li>
+    <li>认知拓展：从不同人身上学习</li>
+    <li>机会获取：很多机会来自推荐</li>
+  </ul>
+</div>

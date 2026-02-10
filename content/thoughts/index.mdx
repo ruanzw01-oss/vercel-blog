@@ -1,0 +1,52 @@
+---
+title: 思考随笔
+---
+
+import { LandingCard, LandingCards } from '../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../components/section-hero'
+import { Briefcase, Sprout, Telescope } from 'lucide-react'
+
+<SectionHero tone="purple">
+  <SectionHeroEyebrow>Mind Notes</SectionHeroEyebrow>
+  <SectionHeroTitle>思考随笔</SectionHeroTitle>
+  <SectionHeroLead>
+    写作是最好的思考方式，记录观点也记录成长。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>职业发展</SectionHeroTag>
+    <SectionHeroTag>生活感悟</SectionHeroTag>
+    <SectionHeroTag>未来展望</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard tone="purple" title="职业发展" href="/thoughts/career" icon={Briefcase}>
+    工作、技能与成长路径的思考与总结。
+  </LandingCard>
+
+  <LandingCard tone="emerald" title="生活感悟" href="/thoughts/life" icon={Sprout}>
+    日常经验与情绪感受的记录与反思。
+  </LandingCard>
+
+  <LandingCard tone="sky" title="未来展望" href="/thoughts/future" icon={Telescope}>
+    关注趋势、规划与长期目标。
+  </LandingCard>
+</LandingCards>
+
+<div className="mt-10 rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/30 p-5">
+  <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+    写作原则
+  </div>
+  <ul className="mt-3 space-y-2 text-sm text-gray-500 dark:text-gray-400">
+    <li>真实记录，不做作</li>
+    <li>有价值，不水文</li>
+    <li>定期更新，形成习惯</li>
+  </ul>
+</div>
