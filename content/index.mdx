@@ -2,24 +2,46 @@
 title: 首页
 ---
 
-import { Cards } from 'nextra/components'
-import { 
-  Code2, 
-  TrendingUp, 
-  BookOpen, 
-  Users, 
+import { LandingCards } from '../components/landing-cards'
+import {
+  Code2,
+  TrendingUp,
+  BookOpen,
+  Users,
   Lightbulb,
-  NotebookText
+  NotebookText,
 } from 'lucide-react'
 
-<div className="mt-8 mb-16">
-  <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-300 dark:to-white bg-clip-text text-transparent mb-6">
-    欢迎来到我的数字花园
-  </h1>
-  <p className="text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
-    这里不仅仅是代码仓库，更是思想沉淀的地方。<br/>
-    在这里，我记录技术成长、理财心得、阅读感悟以及对生活的思考。
-  </p>
+<div className="relative mb-14 overflow-hidden rounded-3xl border border-gray-200/60 dark:border-gray-800/80 bg-gradient-to-br from-white via-white to-blue-50/60 dark:from-gray-950 dark:via-gray-950 dark:to-slate-900/60">
+  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br from-blue-500/30 to-purple-500/10 blur-2xl"></div>
+  <div className="absolute -left-16 bottom-0 h-44 w-44 rounded-full bg-gradient-to-tr from-emerald-400/20 to-sky-400/10 blur-2xl"></div>
+  <div className="relative px-6 py-10 md:px-10 md:py-14">
+    <p className="text-xs uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">
+      Digital Garden
+    </p>
+    <h1 className="mt-4 text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-300 dark:to-white bg-clip-text text-transparent">
+      欢迎来到我的数字花园
+    </h1>
+    <p className="mt-5 text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
+      这里不仅仅是代码仓库，更是思想沉淀的地方。
+      <br />
+      在这里，我记录技术成长、理财心得、阅读感悟以及对生活的思考。
+    </p>
+    <div className="mt-6 flex flex-wrap gap-3 text-xs text-gray-500 dark:text-gray-400">
+      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
+        技术
+      </span>
+      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
+        理财
+      </span>
+      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
+        阅读
+      </span>
+      <span className="rounded-full border border-gray-200/70 dark:border-gray-800 px-3 py-1">
+        生活
+      </span>
+    </div>
+  </div>
 </div>
 
 <div className="mb-8">
@@ -29,100 +51,50 @@ import {
   </h2>
 </div>
 
-<Cards num={2}>
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-600/10 dark:from-blue-500/30 dark:to-blue-600/20 ring-1 ring-blue-500/20">
-        <Code2 size={24} className="text-blue-600 dark:text-blue-400" />
-      </div>
-    }
-    title="技术笔记"
-    href="/tech"
-    arrow
-  >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      全栈开发之路：从前端交互到后端架构的实战经验
-    </div>
-  </Cards.Card>
-  
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 dark:from-emerald-500/30 dark:to-emerald-600/20 ring-1 ring-emerald-500/20">
-        <TrendingUp size={24} className="text-emerald-600 dark:text-emerald-400" />
-      </div>
-    }
+<LandingCards columns={2}>
+  <LandingCards.Card tone="blue" title="技术笔记" href="/tech" icon={Code2}>
+    全栈开发之路：从前端交互到后端架构的实战经验
+  </LandingCards.Card>
+
+  <LandingCards.Card
+    tone="emerald"
     title="理财投资"
     href="/finance"
-    arrow
+    icon={TrendingUp}
   >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      构建财务自由：资产配置、基金定投与价值投资
-    </div>
-  </Cards.Card>
+    构建财务自由：资产配置、基金定投与价值投资
+  </LandingCards.Card>
 
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-amber-500/20 to-amber-600/10 dark:from-amber-500/30 dark:to-amber-600/20 ring-1 ring-amber-500/20">
-        <BookOpen size={24} className="text-amber-600 dark:text-amber-400" />
-      </div>
-    }
-    title="阅读感悟"
-    href="/reading"
-    arrow
-  >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      输入与输出：精选书单、读书笔记与深度思考
-    </div>
-  </Cards.Card>
+  <LandingCards.Card tone="amber" title="阅读感悟" href="/reading" icon={BookOpen}>
+    输入与输出：精选书单、读书笔记与深度思考
+  </LandingCards.Card>
 
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-rose-500/20 to-rose-600/10 dark:from-rose-500/30 dark:to-rose-600/20 ring-1 ring-rose-500/20">
-        <Users size={24} className="text-rose-600 dark:text-rose-400" />
-      </div>
-    }
-    title="人际交往"
-    href="/social"
-    arrow
-  >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      连接与共情：沟通技巧、关系维护与职场软技能
-    </div>
-  </Cards.Card>
-  
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 dark:from-purple-500/30 dark:to-purple-600/20 ring-1 ring-purple-500/20">
-        <Lightbulb size={24} className="text-purple-600 dark:text-purple-400" />
-      </div>
-    }
+  <LandingCards.Card tone="rose" title="人际交往" href="/social" icon={Users}>
+    连接与共情：沟通技巧、关系维护与职场软技能
+  </LandingCards.Card>
+
+  <LandingCards.Card
+    tone="purple"
     title="思考随笔"
     href="/thoughts"
-    arrow
+    icon={Lightbulb}
   >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      灵光一现：那些不记录就会消失的想法
-    </div>
-  </Cards.Card>
+    灵光一现：那些不记录就会消失的想法
+  </LandingCards.Card>
 
-  <Cards.Card
-    icon={
-      <div className="p-3 rounded-xl bg-gradient-to-br from-sky-500/20 to-sky-600/10 dark:from-sky-500/30 dark:to-sky-600/20 ring-1 ring-sky-500/20">
-        <NotebookText size={24} className="text-sky-600 dark:text-sky-400" />
-      </div>
-    }
+  <LandingCards.Card
+    tone="sky"
     title="生活记录"
     href="/life"
-    arrow
+    icon={NotebookText}
   >
-    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-      每日流水与每月待办，持续积累与回顾
-    </div>
-  </Cards.Card>
-</Cards>
+    每日流水与每月待办，持续积累与回顾
+  </LandingCards.Card>
+</LandingCards>
 
 <div className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-800">
-  <div className="text-center text-sm text-gray-400 dark:text-gray-500">
+  <div className="flex items-center justify-center gap-2 text-sm text-gray-400 dark:text-gray-500">
+    <span className="h-2 w-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>
     持续记录，不断成长 ✨
   </div>
 </div>
