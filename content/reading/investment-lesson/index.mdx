@@ -1,0 +1,109 @@
+---
+title: 《投资第一课》
+---
+
+import { LandingCard, LandingCards } from '../../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../../components/section-hero'
+import { BookOpenCheck, CircleDollarSign, LineChart, ShieldCheck, Compass, Sparkles } from 'lucide-react'
+
+<SectionHero tone="sky">
+  <SectionHeroEyebrow>Investment Lesson</SectionHeroEyebrow>
+  <SectionHeroTitle>《投资第一课》</SectionHeroTitle>
+  <SectionHeroLead>
+    从门外汉到 80 分投资者：一套更系统、更可执行的投资学习路径。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>基础认知</SectionHeroTag>
+    <SectionHeroTag>风险与收益</SectionHeroTag>
+    <SectionHeroTag>资产配置</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard
+    tone="amber"
+    title="导读：从门外汉到 80 分投资者"
+    href="/reading/investment-lesson/investment-lesson-intro"
+    icon={BookOpenCheck}
+  >
+    先建立正确的心智模型，再进入具体方法。
+  </LandingCard>
+
+  <LandingCard
+    tone="sky"
+    title="第 1 讲：钱是怎么来的？"
+    href="/reading/investment-lesson/investment-lesson-01"
+    icon={CircleDollarSign}
+  >
+    理解收益的来源，避免“凭感觉”做判断。
+  </LandingCard>
+
+  <LandingCard
+    tone="emerald"
+    title="第 3 讲：为什么多数人赚不到钱"
+    href="/reading/investment-lesson/investment-lesson-03"
+    icon={LineChart}
+  >
+    识别常见陷阱与行为偏差，建立长期主义。
+  </LandingCard>
+
+  <LandingCard
+    tone="blue"
+    title="第 6 讲：波动不是风险"
+    href="/reading/investment-lesson/investment-lesson-06"
+    icon={ShieldCheck}
+  >
+    重新定义风险：可承受的损失与持续性。
+  </LandingCard>
+
+  <LandingCard
+    tone="purple"
+    title="第 12 讲：怎样做好资产配置"
+    href="/reading/investment-lesson/investment-lesson-12"
+    icon={Compass}
+  >
+    从目标与约束出发，搭建适合自己的组合。
+  </LandingCard>
+
+  <LandingCard
+    tone="rose"
+    title="结语：投资成功是变成更好的人之后的结果"
+    href="/reading/investment-lesson/investment-lesson-conclusion"
+    icon={Sparkles}
+  >
+    让方法与性格一起进化，投资才会更稳。
+  </LandingCard>
+</LandingCards>
+
+<div className="mt-10 rounded-2xl border border-gray-200/70 dark:border-gray-800 bg-white/70 dark:bg-gray-900/30 p-5">
+  <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+    全部章节
+  </div>
+  <div className="mt-3 grid gap-2 text-sm text-gray-500 dark:text-gray-400 md:grid-cols-2">
+    <a href="/reading/investment-lesson/investment-lesson-intro">导读：从门外汉到 80 分投资者</a>
+    <a href="/reading/investment-lesson/investment-lesson-01">第 1 讲：钱是怎么来的</a>
+    <a href="/reading/investment-lesson/investment-lesson-02">第 2 讲：哪种投资回报最高</a>
+    <a href="/reading/investment-lesson/investment-lesson-03">第 3 讲：为什么多数人赚不到钱</a>
+    <a href="/reading/investment-lesson/investment-lesson-04">第 4 讲：预期收益率应该是多少</a>
+    <a href="/reading/investment-lesson/investment-lesson-05">第 5 讲：为什么市场会有周期</a>
+    <a href="/reading/investment-lesson/investment-lesson-06">第 6 讲：波动不是风险</a>
+    <a href="/reading/investment-lesson/investment-lesson-07">第 7 讲：投资多久才算长期</a>
+    <a href="/reading/investment-lesson/investment-lesson-08">第 8 讲：集中还是分散</a>
+    <a href="/reading/investment-lesson/investment-lesson-09">第 9 讲：好公司等于好股票吗</a>
+    <a href="/reading/investment-lesson/investment-lesson-10">第 10 讲：可以把股票当筹码吗</a>
+    <a href="/reading/investment-lesson/investment-lesson-11">第 11 讲：为什么听了这么多道理却做不好投资</a>
+    <a href="/reading/investment-lesson/investment-lesson-12">第 12 讲：怎样做好资产配置</a>
+    <a href="/reading/investment-lesson/investment-lesson-13">第 13 讲：怎样制定长期资产配置方案</a>
+    <a href="/reading/investment-lesson/investment-lesson-14">第 14 讲：如何选择好资产</a>
+    <a href="/reading/investment-lesson/investment-lesson-15">第 15 讲：怎样买到好价格</a>
+    <a href="/reading/investment-lesson/investment-lesson-16">第 16 讲：为什么需要一套投资系统</a>
+    <a href="/reading/investment-lesson/investment-lesson-conclusion">结语：投资成功是变成更好的人之后的结果</a>
+  </div>
+</div>

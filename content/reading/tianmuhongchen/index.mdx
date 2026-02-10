@@ -1,0 +1,56 @@
+---
+title: 《天幕红尘》
+---
+
+import { LandingCard, LandingCards } from '../../../components/landing-cards'
+import {
+  SectionHero,
+  SectionHeroEyebrow,
+  SectionHeroLead,
+  SectionHeroTag,
+  SectionHeroTags,
+  SectionHeroTitle,
+} from '../../../components/section-hero'
+import { Compass, Users, Sparkles } from 'lucide-react'
+
+<SectionHero tone="purple">
+  <SectionHeroEyebrow>Tianmu Hongchen</SectionHeroEyebrow>
+  <SectionHeroTitle>《天幕红尘》</SectionHeroTitle>
+  <SectionHeroLead>
+    从策略到哲学的三篇深读，围绕“见路不走”的思维体系展开。
+  </SectionHeroLead>
+  <SectionHeroTags>
+    <SectionHeroTag>策略与决策</SectionHeroTag>
+    <SectionHeroTag>人物与人性</SectionHeroTag>
+    <SectionHeroTag>哲学与文化</SectionHeroTag>
+  </SectionHeroTags>
+</SectionHero>
+
+<LandingCards columns={2}>
+  <LandingCard
+    tone="amber"
+    title="策略与决策"
+    href="/reading/tianmuhongchen/tianmuhongchen-strategy"
+    icon={Compass}
+  >
+    叶子农的操盘术：不是高招，而是因果链条的必然。
+  </LandingCard>
+
+  <LandingCard
+    tone="rose"
+    title="人物与人性"
+    href="/reading/tianmuhongchen/tianmuhongchen-characters"
+    icon={Users}
+  >
+    每个人都是自己因果链上的囚徒。
+  </LandingCard>
+
+  <LandingCard
+    tone="purple"
+    title="哲学与文化"
+    href="/reading/tianmuhongchen/tianmuhongchen-philosophy"
+    icon={Sparkles}
+  >
+    “见路不走”的底层逻辑与生死抉择。
+  </LandingCard>
+</LandingCards>
