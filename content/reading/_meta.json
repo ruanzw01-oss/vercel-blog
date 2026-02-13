@@ -4,8 +4,19 @@
   "annual-reading": "年度书单",
   "reading-method": "阅读方法",
   "cashflow-investing": "现金流投资体系",
-  "investment-lesson": "《投资第一课》",
-  "money-psychology": "《金钱心理学》",
-  "tiandao": "《天道》",
-  "tianmuhongchen": "《天幕红尘》"
+  "investment-lesson": {
+    "title": "《投资第一课》"
+  },
+  "money-psychology": {
+    "title": "《金钱心理学》"
+  },
+  "tiandao": {
+    "title": "《天道》"
+  },
+  "tianmuhongchen": {
+    "title": "《天幕红尘》"
+  },
+  "memory-carrier": {
+    "title": "《记忆承载》"
+  }
 }
