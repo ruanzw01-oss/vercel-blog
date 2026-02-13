@@ -6,7 +6,7 @@ import {
   SiGit,
   SiGnubash
 } from 'react-icons/si'
-import { MonitorCog } from 'lucide-react'
+import { MonitorCog, Bot } from 'lucide-react'
 
 export default {
   index: {
@@ -60,6 +60,14 @@ export default {
       <span className="flex items-center gap-2 group">
         <MonitorCog className="text-blue-500 group-hover:scale-110 transition-transform" size={16} />
         开发环境
+      </span>
+    )
+  },
+  'llm-content-loss': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <Bot className="text-violet-500 group-hover:scale-110 transition-transform" size={16} />
+        AI 提示技巧
       </span>
     )
   }
