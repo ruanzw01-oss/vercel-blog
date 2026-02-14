@@ -4,23 +4,14 @@
   "annual-reading": "年度书单",
   "reading-method": "阅读方法",
   "cashflow-investing": "现金流投资体系",
-  "investment-lesson": {
-    "title": "《投资第一课》"
-  },
-  "money-psychology": {
-    "title": "《金钱心理学》"
-  },
+  "investment-lesson": "《投资第一课》",
+  "money-psychology": "《金钱心理学》",
   "money-psychology-summary": "《金钱心理学》全书精要",
-  "tiandao": {
-    "title": "《天道》"
-  },
-  "tianmuhongchen": {
-    "title": "《天幕红尘》"
-  },
-  "memory-carrier": {
-    "title": "《记忆承载》"
-  },
+  "tiandao": "《天道》",
+  "tianmuhongchen": "《天幕红尘》",
+  "memory-carrier": "《记忆承载》",
   "prompts": "提示词模板",
   "做个80分投资者-读书笔记": "做个80分投资者",
   "投资中我相信的事-深度解析": "《投资中，我相信的事》金句摘录与深度解读"
 }
+
