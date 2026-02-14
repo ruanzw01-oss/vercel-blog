@@ -3,6 +3,7 @@ title: 首页
 ---
 
 import { LandingCard, LandingCards } from '../components/landing-cards'
+import { RecentPosts } from '../components/recent-posts'
 import {
   SectionHero,
   SectionHeroEyebrow,
@@ -20,6 +21,73 @@ import {
   NotebookText,
 } from 'lucide-react'
 
+{/* ========== 最新文章数据（手动维护，新增文章时更新此列表） ========== */}
+export const recentPosts = [
+  {
+    title: '算法式活着：为什么大多数人一辈子攒不过200万',
+    href: '/reading/memory-carrier/algorithm-life',
+    date: '2026-02-14',
+    category: '阅读',
+    summary: '读碧树西风文章有感，拆解宋江身上的五条数学定理，探讨为什么坚持简单方法比聪明更重要。',
+  },
+  {
+    title: '信息不对称',
+    href: '/reading/memory-carrier/information-asymmetry',
+    date: '2026-02-14',
+    category: '阅读',
+    summary: '《记忆承载》系列，关于信息不对称的思考与解读。',
+  },
+  {
+    title: '《金钱心理学》全书精要',
+    href: '/reading/money-psychology-summary',
+    date: '2026-02-14',
+    category: '阅读',
+    summary: '20 章浓缩精华，从"没有人真的对钱失去理智"到"我的理财方案"，一篇掌握全书核心。',
+  },
+  {
+    title: '互联网没有死，它只是换了一张账单',
+    href: '/thoughts/internet-not-dead',
+    date: '2026-02-13',
+    category: '思考',
+    summary: '整理清华鑫哥的三点质疑：用互联网宣布互联网死亡的悖论、Token 崇拜与 DAU 崇拜的本质相同。',
+  },
+  {
+    title: '《投资中，我相信的事》金句摘录与深度解读',
+    href: '/reading/投资中我相信的事-深度解析',
+    date: '2026-02-13',
+    category: '阅读',
+    summary: '投资中那些值得反复品味的金句，以及背后的投资哲学深度解读。',
+  },
+  {
+    title: '为什么你看好 AI，却不敢买 AI 的票？',
+    href: '/finance/buy-good-not-cheap',
+    date: '2026-02-13',
+    category: '理财',
+    summary: '先买好的，别买便宜的。核心九个字：选好的，备够钱，扛得住。',
+  },
+  {
+    title: '黄金 ETF 量化体检',
+    href: '/finance/gold-etf-volatility',
+    date: '2026-02-11',
+    category: '理财',
+    summary: '用数据说话，从波动率、回撤、相关性等维度对黄金 ETF 做一次量化体检。',
+  },
+  {
+    title: '每日流水账 - 2026-02-11',
+    href: '/life/daily/2026-02-11',
+    date: '2026-02-11',
+    category: '生活',
+    summary: '关于 AI 使用的切身感受：编程是主场，读书需重新审视，身体永远是底层基础设施。',
+  },
+  {
+    title: '做个80分投资者',
+    href: '/reading/做个80分投资者-读书笔记',
+    date: '2026-02-11',
+    category: '阅读',
+    summary: '从门外汉到合格投资者的读书笔记，聚焦可落地的投资框架。',
+  },
+]
+
 <SectionHero tone="blue">
   <SectionHeroEyebrow>Digital Garden</SectionHeroEyebrow>
   <SectionHeroTitle>欢迎来到我的数字花园</SectionHeroTitle>
@@ -36,6 +104,16 @@ import {
   </SectionHeroTags>
 </SectionHero>
 
+{/* ========== 最新发布 ========== */}
+<div className="mb-10">
+  <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 flex items-center gap-3">
+    <span className="w-1 h-6 bg-gradient-to-b from-emerald-500 to-teal-500 rounded-full"></span>
+    最新发布
+  </h2>
+  <RecentPosts posts={recentPosts} />
+</div>
+
+{/* ========== 探索版图 ========== */}
 <div className="mb-8">
   <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 flex items-center gap-3">
     <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
