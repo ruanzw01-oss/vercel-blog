@@ -96,9 +96,9 @@ type SectionHeroLeadProps = {
 
 const SectionHeroLead = ({ children }: SectionHeroLeadProps) => {
   return (
-    <p className="mt-5 text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
+    <div className="mt-5 text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed [&>p]:m-0 [&>p+p]:mt-3">
       {children}
-    </p>
+    </div>
   )
 }
 
