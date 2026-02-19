@@ -6,7 +6,7 @@ import {
   SiGit,
   SiGnubash
 } from 'react-icons/si'
-import { MonitorCog, Bot } from 'lucide-react'
+import { MonitorCog, Bot, Key } from 'lucide-react'
 
 export default {
   index: {
@@ -68,6 +68,14 @@ export default {
       <span className="flex items-center gap-2 group">
         <Bot className="text-violet-500 group-hover:scale-110 transition-transform" size={16} />
         AI 提示技巧
+      </span>
+    )
+  },
+  'kimi-api-integration': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <Key className="text-amber-500 group-hover:scale-110 transition-transform" size={16} />
+        Kimi API 集成
       </span>
     )
   }
