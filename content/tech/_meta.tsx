@@ -6,7 +6,7 @@ import {
   SiGit,
   SiGnubash
 } from 'react-icons/si'
-import { MonitorCog, Bot, Key } from 'lucide-react'
+import { MonitorCog, Bot, Key, AudioLines } from 'lucide-react'
 
 export default {
   index: {
@@ -76,6 +76,14 @@ export default {
       <span className="flex items-center gap-2 group">
         <Key className="text-amber-500 group-hover:scale-110 transition-transform" size={16} />
         Kimi API 集成
+      </span>
+    )
+  },
+  'funasr-audio-to-text': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <AudioLines className="text-teal-500 group-hover:scale-110 transition-transform" size={16} />
+        FunASR 音频转文字
       </span>
     )
   }
