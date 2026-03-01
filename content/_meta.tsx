@@ -1,11 +1,13 @@
 
-import { 
-  Code2, 
-  TrendingUp, 
-  BookOpen, 
-  Users, 
+import {
+  Code2,
+  TrendingUp,
+  BookOpen,
+  Users,
   Lightbulb,
-  NotebookText
+  NotebookText,
+  Rss,
+  Scissors
 } from 'lucide-react'
 
 export default {
@@ -62,6 +64,24 @@ export default {
       <span className="flex items-center gap-2">
         <NotebookText size={18} className="text-sky-500" />
         生活记录
+      </span>
+    ),
+    type: 'page'
+  },
+  wechat: {
+    title: (
+      <span className="flex items-center gap-2">
+        <Rss size={18} className="text-green-500" />
+        公众号
+      </span>
+    ),
+    type: 'page'
+  },
+  clips: {
+    title: (
+      <span className="flex items-center gap-2">
+        <Scissors size={18} className="text-orange-500" />
+        片段摘录
       </span>
     ),
     type: 'page'
