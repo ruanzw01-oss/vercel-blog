@@ -1,6 +1,6 @@
 import type { ComponentType, ReactNode } from 'react'
 
-type Tone = 'blue' | 'emerald' | 'amber' | 'rose' | 'purple' | 'sky'
+type Tone = 'blue' | 'emerald' | 'amber' | 'orange' | 'rose' | 'purple' | 'sky'
 
 const toneStyles: Record<Tone, { accent: string; hover: string }> = {
   blue: {
@@ -14,6 +14,10 @@ const toneStyles: Record<Tone, { accent: string; hover: string }> = {
   amber: {
     accent: 'text-amber-500',
     hover: 'group-hover:text-amber-500',
+  },
+  orange: {
+    accent: 'text-orange-500',
+    hover: 'group-hover:text-orange-500',
   },
   rose: {
     accent: 'text-rose-500',
@@ -59,7 +63,7 @@ const FeatureCard = ({
   icon: Icon,
   children,
 }: FeatureCardProps) => {
-  const styles = toneStyles[tone]
+  const styles = toneStyles[tone] ?? toneStyles.blue
   return (
     <div className="group rounded-2xl border border-gray-100/80 dark:border-white/10 bg-white/70 dark:bg-gray-900/30 p-5 transition-all hover:border-gray-200 dark:hover:border-white/20">
       <div className="flex items-center gap-2 mb-2">

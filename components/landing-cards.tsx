@@ -1,7 +1,7 @@
 import type { ComponentType, ReactElement, ReactNode } from 'react'
 import { Cards } from 'nextra/components'
 
-type Tone = 'blue' | 'emerald' | 'amber' | 'rose' | 'purple' | 'sky'
+type Tone = 'blue' | 'emerald' | 'amber' | 'orange' | 'rose' | 'purple' | 'sky'
 
 const toneStyles: Record<Tone, { surface: string; icon: string }> = {
   blue: {
@@ -18,6 +18,11 @@ const toneStyles: Record<Tone, { surface: string; icon: string }> = {
     surface:
       'bg-gradient-to-br from-amber-500/20 to-amber-600/10 dark:from-amber-500/30 dark:to-amber-600/20 ring-1 ring-amber-500/20',
     icon: 'text-amber-600 dark:text-amber-400',
+  },
+  orange: {
+    surface:
+      'bg-gradient-to-br from-orange-500/20 to-orange-600/10 dark:from-orange-500/30 dark:to-orange-600/20 ring-1 ring-orange-500/20',
+    icon: 'text-orange-600 dark:text-orange-400',
   },
   rose: {
     surface:
@@ -60,7 +65,7 @@ type LandingCardsComponent = ((props: LandingCardsProps) => ReactElement) & {
 }
 
 const LandingCardIcon = ({ tone, children }: LandingCardIconProps) => {
-  const styles = toneStyles[tone]
+  const styles = toneStyles[tone] ?? toneStyles.blue
   return (
     <div
       className={`inline-flex items-center justify-center rounded-xl p-3 ${styles.surface}`}

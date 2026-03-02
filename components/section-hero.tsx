@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-type Tone = 'blue' | 'emerald' | 'amber' | 'rose' | 'purple' | 'sky'
+type Tone = 'blue' | 'emerald' | 'amber' | 'orange' | 'rose' | 'purple' | 'sky'
 
 const toneStyles: Record<
   Tone,
@@ -23,6 +23,12 @@ const toneStyles: Record<
       'bg-gradient-to-br from-white via-white to-amber-50/70 dark:from-gray-950 dark:via-gray-950 dark:to-amber-950/35 border-amber-100/60 dark:border-amber-500/20',
     glowPrimary: 'from-amber-500/35 to-orange-500/10',
     glowSecondary: 'from-rose-400/15 to-amber-400/10',
+  },
+  orange: {
+    surface:
+      'bg-gradient-to-br from-white via-white to-orange-50/70 dark:from-gray-950 dark:via-gray-950 dark:to-orange-950/35 border-orange-100/60 dark:border-orange-500/20',
+    glowPrimary: 'from-orange-500/35 to-amber-500/10',
+    glowSecondary: 'from-rose-400/15 to-orange-400/10',
   },
   rose: {
     surface:
@@ -50,7 +56,7 @@ type SectionHeroProps = {
 }
 
 const SectionHero = ({ tone, children }: SectionHeroProps) => {
-  const styles = toneStyles[tone]
+  const styles = toneStyles[tone] ?? toneStyles.blue
   return (
     <div
       className={`relative mb-12 overflow-hidden rounded-3xl border ${styles.surface}`}
