@@ -10,3 +10,4 @@
 | [载体会变，需求不变](./carrier-changes-needs-constant) | 投资底层逻辑、资产保值、长期主义 |
 | [最好的投资，大多数时候是无聊的](./good-investing-is-boring) | 投资心态、结构性规避、等待机会 |
 | [警报解除了吗？](./is-the-alarm-over) | 风险意识、仓位管理、避免消耗性胜利 |
+| [战争不会轻易结束](./war-wont-end-easily) | 战争结构分析、沉没成本、生命意义 |
