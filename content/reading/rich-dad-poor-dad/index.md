@@ -48,3 +48,10 @@ import { Cards } from 'nextra/components'
   <Cards.Card title="第五课：富人的投资" href="/reading/rich-dad-poor-dad/rich-dad-05" />
   <Cards.Card title="第六课：不要为金钱而工作" href="/reading/rich-dad-poor-dad/rich-dad-06" />
 </Cards>
+
+## 延伸文章
+
+<Cards>
+  <Cards.Card title="延伸一：最扎心的一句，不是“资产”，而是你可能一直在为恐惧工作" href="/reading/rich-dad-poor-dad/wechat-01-gongzuozhishi" />
+  <Cards.Card title="延伸二：最有用的概念，不是“发财”，而是分清什么在让你变富" href="/reading/rich-dad-poor-dad/wechat-02-zichanfuzhai" />
+</Cards>
