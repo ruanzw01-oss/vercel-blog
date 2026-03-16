@@ -86,5 +86,13 @@ export default {
         FunASR 音频转文字
       </span>
     )
+  },
+  'ppt-writing-guide': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <MonitorCog className="text-rose-500 group-hover:scale-110 transition-transform" size={16} />
+        职场 PPT 制作要领
+      </span>
+    )
   }
 }
