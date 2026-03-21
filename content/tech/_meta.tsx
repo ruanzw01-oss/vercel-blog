@@ -6,7 +6,7 @@ import {
   SiGit,
   SiGnubash
 } from 'react-icons/si'
-import { MonitorCog, Bot, Key, AudioLines } from 'lucide-react'
+import { MonitorCog, Bot, Key, AudioLines, Star, ShieldCheck } from 'lucide-react'
 
 export default {
   index: {
@@ -92,6 +92,22 @@ export default {
       <span className="flex items-center gap-2 group">
         <MonitorCog className="text-rose-500 group-hover:scale-110 transition-transform" size={16} />
         职场 PPT 制作要领
+      </span>
+    )
+  },
+  'awesome-finds': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <Star className="text-yellow-400 group-hover:scale-110 transition-transform" size={16} />
+        Awesome Finds
+      </span>
+    )
+  },
+  'oauth2-guide': {
+    title: (
+      <span className="flex items-center gap-2 group">
+        <ShieldCheck className="text-green-500 group-hover:scale-110 transition-transform" size={16} />
+        OAuth2 授权流程详解
       </span>
     )
   }
