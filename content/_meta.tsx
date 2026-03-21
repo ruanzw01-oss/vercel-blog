@@ -59,15 +59,6 @@ export default {
     ),
     type: 'page'
   },
-  life: {
-    title: (
-      <span className="flex items-center gap-2">
-        <NotebookText size={18} className="text-sky-500" />
-        生活记录
-      </span>
-    ),
-    type: 'page'
-  },
   wechat: {
     title: (
       <span className="flex items-center gap-2">
