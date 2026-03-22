@@ -32,6 +32,7 @@
 | z-img | AI 图片生成网站 | [访问](https://z-img.pics/zh/) |
 | Arena (LMArena) | UC Berkeley 研究团队打造的 AI 模型真实场景评测平台，含公开排行榜 | [访问](https://arena.ai/) |
 | acl4ssr-sub | 订阅转换工具 | [访问](https://acl4ssr-sub.github.io/) |
+| 微信文章下载 | 微信公众号文章批量下载与导出工具 | [访问](https://down.mptext.top/dashboard/account) |
 
 ## AI 写作 / 小说生成
 
